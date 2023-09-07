@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Return the number (count) of vowels (a, e, i, o, u) in the given string. The input string will only consist of lower case letters and/or spaces."
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const getvovelCount = (str) => {
+        let vovelCount = 0;
+        let vovel = ['a', 'e', 'i', 'o', 'u'];
+        for (let char of str) {
+          if (vovel.includes(char)) {
+            vovelCount++;
+          }
+        }
+        console.log(vovelCount);
+      };
+      getvovelCount('hello');
+    </script>
+  </body>
+</html>

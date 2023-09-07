@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are positive, non-zero digits.
+
+    "
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const isdivisible = (n, x, y) => {
+        // if (n % x === 0 && n % y === 0) {
+        //   console.log('hlo');
+        // }
+        return n % x === 0 && n % y === 0;
+      };
+      console.log(isdivisible(4, 2, 2));
+    </script>
+  </body>
+</html>
